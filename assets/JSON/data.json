@@ -1,0 +1,60 @@
+[
+    {
+        "id":1,
+        "question": "Adınız:",
+        "labelFor": "name",
+        "inputType": "text",
+        "inputName": "name"
+    },
+    {
+        "id":2,
+        "question": "Soyadınız:",
+        "labelFor": "surname",
+        "inputType": "text",
+        "inputName": "surname"
+    },
+    {
+        "id":3,
+        "question": "Telefon numaranız:",
+        "labelFor": "phoneNumber",
+        "inputType": "text",
+        "inputName": "phoneNumber"
+    },
+    {
+        "id":4,
+        "question": "Email adresiniz:",
+        "labelFor": "email",
+        "inputType": "email",
+        "inputName": "email"
+    },
+    {
+        "id":5,
+        "question": "TC kimlik numaranız:",
+        "labelFor": "tc",
+        "inputType": "text",
+        "inputName": "tc"
+    },
+    {
+        "id":6,
+        "question": "Cinsiyetiniz:",
+        "labelFor": "gender",
+        "inputType": "radio",
+        "radioChoices": [
+            "Kadın",
+            "Erkek"
+        ],
+        "inputName": "gender"
+    },
+    {
+        "id":7,
+        "question": "Öğrenci misiniz?",
+        "labelFor": "job",
+        "inputType": "radio",
+        "radioChoices": [
+            "Evet",
+            "Hayır"
+        ],
+        "inputName": "job"
+    }
+
+]
