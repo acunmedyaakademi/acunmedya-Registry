@@ -57,6 +57,18 @@
             "Hayır"
         ],
         "inputName": "job"
+    },
+    {
+        "id":8,
+        "question": "Eğitim Seviyeniz?",
+        "labelFor": "education",
+        "inputType": "radio",
+        "name": "education",
+        "radioChoices": [
+            "Lisans",
+            "Lisansüstü"
+        ],
+        "inputName": "education"
     }
 
 ]
