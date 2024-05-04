@@ -39,6 +39,7 @@
         "question": "Cinsiyetiniz:",
         "labelFor": "gender",
         "inputType": "radio",
+        "name": "gender",
         "radioChoices": [
             "Kadın",
             "Erkek"
@@ -50,6 +51,7 @@
         "question": "Öğrenci misiniz?",
         "labelFor": "job",
         "inputType": "radio",
+        "name": "job",
         "radioChoices": [
             "Evet",
             "Hayır"
