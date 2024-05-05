@@ -1,3 +1,4 @@
+
 const registerForm = document.querySelector('#register-form');
 
 async function fetchData(){
@@ -41,7 +42,7 @@ function getInputType(question){
     if(question.inputType == "text" || question.inputType == "email"){
         return `
             <div class="text-div">
-                <label for="${question.labelFor}">${question.question}</label>
+                <label for="${question.labelFor}" class="${question.labelFor}">${question.question}</label>
                 ${question.labelFor == "phoneNumber" ? `<input id="${question.inputName}" data-phoneNumber="phoneNumber" type='number' name="${question.inputName}"/>`  : `<input id="${question.inputName}" type='${question.inputType}' name="${question.inputName}"/>`}
                 
             </div>
@@ -73,9 +74,16 @@ function isValidTCIdentityNo(tckn){
 registerForm.addEventListener('submit',(e) => {
     e.preventDefault();
     if(document.querySelector(`#tc`)){
+
+        const tcLabel = document.querySelector(`.tc`)
         const tcInput = document.querySelector(`#tc`)
+        const warning = document.createElement("p");
+        warning.classList.add("warning");
+        warning.innerText = "";
+        tcLabel.append(warning);
         if(isValidTCIdentityNo(tcInput.value) == false){
-            return
+            warning.innerText = "Geçerli bir TC kimlik numarası giriniz";
+            return ``;
         }
     }
     const formData = new FormData(e.target);
